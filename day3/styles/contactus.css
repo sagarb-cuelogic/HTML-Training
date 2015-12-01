@@ -1,0 +1,87 @@
+    body {
+        font-weight: 400;
+        font-size: 15px;
+        color: #1d3c41;
+        overflow-y: scroll;
+        font-family: sans-serif;
+        margin: 0 auto;
+    }
+    
+    #wrapper {
+        right: 0px;
+        min-height: 560px;
+        margin: 0px auto;
+        width: 500px;
+        position: relative;
+    }
+    
+    .contactform {
+        position: absolute;
+        top: 0px;
+        width: 88%;
+        padding: 18px 6% 60px 6%;
+        margin: 0 0 35px 0;
+        background: #f7f7f7;
+        border: 1px solid #a6c4c8;
+        border-radius: 5px;
+        margin-top: 14%;
+    }
+    
+    .contactform h1 {
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0px;
+    }
+    
+    .contactform label {
+        color: #1d3c41;
+        position: relative;
+    }
+    
+    .contactform input:not([type="checkbox"]),.contactform textarea  {
+        width: 92%;
+        margin-top: 4px;
+        padding: 10px 5px 10px 32px;
+        border: 1px solid rgb(178, 178, 178);
+        -webkit-appearance: textfield;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+    
+    .contactform p {
+        margin-bottom: 15px;
+    }
+    
+    .keeplogin {
+        margin-top: -5px;
+    }
+    
+    .submit.button {
+        text-align: center;
+    }
+    
+    .contactform p.button input {
+        cursor: pointer;
+        background: #28899a;
+        padding: 8px 5px;
+        color: #fff;
+        font-size: 24px;
+        border: 1px solid #0c4c57;
+        margin-bottom: 10px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+    
+    .contactform .change_link {
+        color: #888;
+    }
+    
+    .contactform p.change_link a {
+        color: #1d3c41;
+    }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Project IGI::Canvas</title>
+    <meta name="description" content="Project IGI Action Game. Providing best Action Games with extreme graphics." />
+    <!--added for SEO-->
+    <meta name="keywords" content="Best 2D Action Games, Best Game in Action Class, Popular Action Games" />
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW" />
+    <!--added for SEO. content parameter contains attribute index which tell that to index this page, and follow attribute is used for links to other pages will be followed-->
+    <link rel="stylesheet" type="text/css" href="styles/canvas.css">
+    <!--canavs script-->
+    <script>
+    function drawRect() {
+        var canvas = document.getElementById("canvasRect");
+        if (canvas.getContext) {
+            var ctx = canvas.getContext("2d");
+
+            ctx.fillStyle = "rgb(200,0,0)";
+            ctx.fillRect(10, 7, 200, 100);
+
+            ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+            ctx.fillRect(30, 17, 200, 100);
+        }
+    }
+
+
+    function drawTriangle() {
+        var canvas = document.getElementById('canvasTriangle');
+        if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+
+            // Filled triangle
+            ctx.beginPath();
+            ctx.moveTo(25, 15);
+            ctx.lineTo(215, 15);
+            ctx.lineTo(25, 105);
+            ctx.fill();
+
+            // Stroked triangle
+            ctx.beginPath();
+            ctx.moveTo(200, 140);
+            ctx.lineTo(180, 45);
+            ctx.lineTo(15, 125);
+            ctx.closePath();
+            ctx.stroke();
+        }
+    }
+
+
+    function drawCircle() {
+        var canvas = document.getElementById('canvasCircle');
+        if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+
+            var circle = new Path2D();
+            circle.moveTo(125, 35);
+            circle.arc(120, 70, 55, 0, 2 * Math.PI);
+            ctx.fill(circle);
+        }
+    }
+    </script>
+    <!--end canvas script-->
+</head>
+
+<body onload="drawRect();drawTriangle();drawCircle();">
+    <!--main page wrapper-->
+    <div id="wrapper">
+        <!--html5 canvas animation-->
+        <div class="canavasbox">
+            <!--rectangle-->
+            <canvas id="canvasRect" class="canvasShape"></canvas>
+            <!--end rectangle-->
+            <!--triangle-->
+            <canvas id="canvasTriangle" class="canvasShape"></canvas>
+            <!--end triangle-->
+            <!--triangle-->
+            <canvas id="canvasCircle" class="canvasShape"></canvas>
+            <!--end triangle-->
+        </div>
+        <!--end html5 canvas animation-->
+    </div>
+    <!--end main page wrapper-->
+</body>
+
+</html>
